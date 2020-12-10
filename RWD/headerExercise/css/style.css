@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 額外加入 圖片設定*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* 上面reset結束 */
+.wrap{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 5px 0px rgba(173, 173, 173, 0.123);
+}
+.headerTop{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    background-color: rgba(255, 198, 198, 0.068);
+
+}
+.headerTop a{
+    text-decoration:none;
+    margin-left: 15px;
+    padding: 5px 10px;
+    /* border: 1px black solid; */
+    color: rgb(128, 128, 128);
+    border-radius: 5px;
+}
+
+.headerTop a:hover{
+    background: rgba(255, 192, 203, 0.322);
+    color: #000;
+    font-weight: 600;
+}
+
+.headerMain{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    /* background: rgb(100, 84, 59); */
+}
+.three{
+    display: none;
+}
+
+.headerMainLeft a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(236, 85, 85);
+    font-weight: 600;
+    font-size: 24px;
+    font-family: DFKai-sb,Arial;
+}
+
+.logo{
+    /* background: rgb(192, 230, 255); */
+    background-image: url(../img/LOGO.png);
+    height: 100px;
+    width:  100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* 依照原來的比例，等比的縮放到指定的元素的尺寸中。 */
+  }
+
+.headerMainRight{
+    display: flex;
+    align-items: center;
+}
+.headerMainRight li{
+    margin-left: 5px;
+}
+.headerMainRight a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background: rgb(250, 217, 223);
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(189, 0, 31); 
+}
+
+.headerMainRight a:hover{
+    background-color: pink;
+    font-weight: 600;
+    /* border-bottom: 2px solid rgb(253, 72, 102); */
+    box-shadow: 2px 2px 1px 0px rgb(231, 152, 115);
+}
+.main{
+    /* background: rgb(192, 255, 203); */
+    /* border: 2px solid rgb(253, 72, 102); */
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    margin-top: 30px;
+}
+.mainContent{
+    background-color: rgb(255, 245, 245);
+    padding: 1%;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px rgb(163, 163, 163);
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+@media(max-width:768px){
+/* 小於768px時 */
+
+/* .three {
+    text-align: center;
+    line-height: 50px ;
+    display: block;
+    background-color: rgba(100, 148, 237, 0.424);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} */
+
+.headerMain{
+    flex-direction: column; 
+}
+
+.headerMainRight{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.headerMainRight li{
+    text-align: center;
+    width: 45%;
+    margin: 1% 2%;
+}
+
+.main{
+    flex-direction: column;
+    align-items: center;
+}
+.mainContent{
+    width: 80%;
+    margin-bottom: 5%;
+}
+.headerMainLeft a{
+justify-content: center;
+}
+
+
+
+
+}
