@@ -106,7 +106,7 @@ header {
 
 .logo{
     /* background: rgb(192, 230, 255); */
-    background-image: url(../img/LOGO.png);
+    background-image: url(../img/Logo.png);
     height: 100px;
     width:  100px;
     background-repeat: no-repeat;
@@ -164,16 +164,6 @@ h3{
 @media(max-width:768px){
 /* 小於768px時 */
 
-/* .three {
-    text-align: center;
-    line-height: 50px ;
-    display: block;
-    background-color: rgba(100, 148, 237, 0.424);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-} */
-
 .headerMain{
     flex-direction: column; 
 }
@@ -186,7 +176,7 @@ h3{
 .headerMainRight li{
     text-align: center;
     width: 45%;
-    margin: 1% 2%;
+    margin:8px 2%;
 }
 
 .main{
@@ -195,7 +185,7 @@ h3{
 }
 .mainContent{
     width: 80%;
-    margin-bottom: 5%;
+    margin-bottom: 35px;
 }
 .headerMainLeft a{
 justify-content: center;
