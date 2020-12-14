@@ -61,7 +61,6 @@ img{
 header {
     display: flex;
 	justify-content: space-between;
-	border: 1px rgba(196, 191, 191, 0.541) solid;
 }
 
 .logo {
@@ -85,7 +84,6 @@ header {
 	margin-left: 5px;
 	padding: 10px;	
 	border-radius: 5px;
-
 }
 .headerNav a:hover {
 	background-color: rgb(253, 166, 180);
@@ -99,7 +97,6 @@ header {
 	margin: 20px;
 }
 .mainContent{
-	border: 1px rgba(190, 190, 190, 0.534) solid;
 	padding: 10px;
 	margin-right: 3%;
 	line-height: 1.5;
@@ -111,7 +108,6 @@ h2{
 }
 
 .mainImgLike{
-	border: 1px rgba(185, 185, 185, 0.603) solid;
 	padding: 5px;
 }
 .mainImgLikeContent{
