@@ -148,7 +148,7 @@ h2{
 		margin-right: 0px;	
 	}
 
-	.mainImgLike{
+	/* .mainImgLike{
 		display: flex;		
 		flex-wrap: wrap;
 		justify-content: space-around;
@@ -156,6 +156,6 @@ h2{
 	.mainImgLike img{
 		width: 200px;
 		height: 150px;
-	}
+	} */
 	
 }
