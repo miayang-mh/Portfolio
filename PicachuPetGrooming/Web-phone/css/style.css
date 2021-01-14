@@ -47,22 +47,14 @@ table {
 	border-spacing: 0;
 }
 /* ------------------------------------ */
-
-/* body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
+/* 額外加入 圖片設定*/
+img{
+    max-width: 80%;
+    height: auto;
+}
 
 body{
-    background-color: #fbf1f1;
+    background-color: #ffffff;
     font-family: "微軟正黑體",arial,cursive;
     color: rgb(63, 63, 63);
     
@@ -70,7 +62,6 @@ body{
 p{
     line-height: 1.5;
 }
-
 
 header{
     margin-bottom: 20px;
@@ -84,16 +75,18 @@ header a{
     font-family: cursive;
 }
 header p {
-    background: #f6c5c5;
-    
+    background: #fbe9e9;
 }
+
+h1 img{
+    width: 30%;
+}
+
 article{
-    background: #f6c5c5;
+    background: #fbe9e9;
     padding: 20px;
-    margin: 20px 0px;
+    margin: 20px 0px 0px;
 }
-
-
 
 h2{
     font-size: 30px;
@@ -101,28 +94,39 @@ h2{
     font-weight: 700;
     margin: 20px;
 }
+.center{
+    text-align: center;
+}
+
 .serviceList{
     display: flex;
-    
+    flex-direction: column;
     justify-content: space-around;
 }
 .circleMold{
-background: #5dc7c7;
-padding: 20px;
+background: #45c7c7;
+padding: 5px;
 box-shadow:  1px 1px 5px #a1a1a1;
-display: inline-block;
-border-radius: 50%;
+border-radius: 20px;
 color: white;
 font-size: 30px;
 }
 
+.imgBorder{
+border: 10px dotted rgba(228, 123, 123, 0.397);
+}
 
 .content{
     margin: 10px 0px;
-    background-color: #fbf1f1;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 20px;
     font-size: 18px;
+    box-shadow: 1px 1px 5px #a1a1a1;
+    text-align: center;
+}
+.none{
+    display: none;
 }
 
 h3{
@@ -135,4 +139,11 @@ h3{
 ul li{
     line-height: 1.5;
     text-align: center;
+    margin-bottom: 10px;
 }
+
+.about li{
+    text-align: left;
+    list-style-type: disc;
+    list-style-position: inside;
+    }
