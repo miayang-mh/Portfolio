@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -49,9 +49,13 @@ table {
 /* ------------------------------------ */
 /* 額外加入 圖片設定*/
 img{
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
 }
+*{  box-sizing: border-box;}
+li {    line-height: 2;}
+p{ font-size: 24px;}
+li{ font-size: 24px;}
 /* ------------------------------------ */
 .p-20{padding: 20px;}
 .pt-20{padding-top: 20px;}
@@ -63,8 +67,15 @@ header{
     display: flex;
     flex-flow: column;    
     align-items: center;
-    background: rgb(255, 209, 209);
-    padding-top: 40px;
+    padding-top: 60px;
+    height: 500px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgb(255, 255, 255)), url(../img/bg/10.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    /* 滿版 */
+    color: rgb(97, 4, 4);
+    font-weight: 700;
 }
 
 h1{
@@ -74,5 +85,140 @@ h1{
     align-items: center;
 }
 h1 img{
+    width: 15%;
+}
+h1 p{
+    margin-left: 30px ;
+}
+header a{
+    text-decoration: none;
+    color: rgb(97, 4, 4);
+    font-weight: 700;
+    font-size: 50px;
+
+}
+
+.floatCard{
+    /* position:relative; 重複了*/
+    top: -250px;
+    margin: 0 auto -250px;   
+    /* width: 1024px;    1024以下，li變成2欄 */
+    /* padding: 10px 50px;   */
+    border: 1px solid rgba(0, 0, 0, 0);
+    
+    /* z-index: 10 ; */
+}
+article{      
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;   
+}
+
+h2{
+    font-size: 38px;
+    font-weight: 700;
+    margin:  auto auto 10px;
+    text-align: center;
+}
+.serviceList{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+.serviceItems{
+    box-shadow: 0px 0px 10px rgb(107, 107, 107) ;
     width: 30%;
+    text-align: center;
+}
+.serviceItems:hover{
+    box-shadow: 0px 0px 20px rgb(245, 104, 104) ;
+    /* box-shadow: 0px 0px 10px  rgb(238, 156, 79) ; */
+    border: 1px pink solid;
+}
+.serviceList li{
+    border: 1px rgba(255, 192, 203, 0) solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 12px;
+    padding: 32px;
+}
+ .packageMonth{
+    box-shadow: 0px 0px 20px rgb(238, 156, 79) ;
+    /* box-shadow: 0px 0px 20px rgb(245, 104, 104) ; */
+    width: 95%;
+    text-align: center;
+
+}
+.packageMonth:hover{
+    box-shadow: 0px 0px 20px rgb(245, 104, 104) ;
+    /* box-shadow: 0px 0px 20px rgb(238, 156, 79) ; */
+}
+.textCenter{
+    display: inline-block;
+    text-align: center;
+}
+.circleMold{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.photoBg{
+    background: rgba(245, 233, 210, 0.445);
+}
+.center{
+    text-align: center;    
+}
+
+.imgBorder{
+    border: 10px dotted rgb(240, 182, 211); 
+}
+.about li{
+    list-style-type: disc;
+}
+
+
+.aboutConten{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 1000px; */
+    /* padding: 10px 50px; */
+}
+
+.aboutContenItem{
+    margin: 12px;
+    padding: 32px;
+    width: 47%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(209, 209, 209) ;
+    border-radius: 10px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+}
+.aboutContenItem:hover{
+    box-shadow: 0px 0px 5px rgb(119, 119, 119) ;
+}
+
+.WrapAboutDropdown{
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(253, 253, 253, 0.418)), url(../img/bg/10.jpg);
+    background-size: auto;
+}
+
+/* 輪播 */
+.swiper-container {
+    /* width: 1280px; */
+    width: 1208px;
+    height: 300px;
+  }
+.swiper-slide {
+    /* text-align: center; */
+    /* js有這設定 */
+}
+.swiper-slide img{
+text-align: center;
+height: 100%;
 }
